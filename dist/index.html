@@ -12,31 +12,218 @@
     <title>Frontend Mentor | Time tracking dashboard</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body class="bg-clr-very-dark-blue">
-    <div class="wrapper container mx-auto px-10 flex-center py-12 lg:py-48">
-      <main class="">
-
-        <div class="hero bg-clr-blue pt-8 rounded-2xl">
+  <body class="bg-clr-very-dark-blue text-neutral-100">
+    <div
+      class="wrapper container mx-auto px-6 md:px-10 flex-center py-12 lg:py-48"
+    >
+      <main class="grid gap-6">
+        <div class="bg-clr-blue pt-8 rounded-2xl">
           <div class="px-8 pb-8 flex flex-row lg:block gap-6">
-            <img class="aspect-square h-24 lg:h-20 rounded-full border-neutral-100 border-solid border-2" src="./images/image-jeremy.png" alt="" />
+            <img
+              class="aspect-square h-16 lg:h-20 rounded-full border-neutral-100 border-solid border-2"
+              src="./images/image-jeremy.png"
+              alt=""
+            />
             <div class="lg:mt-3">
-              <p class="text-clr-pale-blue">Report for</p>
-              <p class="text-4xl text-neutral-100"> Jeremy Robson </p>
+              <p class="text-sm md:text-base text-clr-pale-blue">Report for</p>
+              <p class="text-2xl md:text-4xl">Jeremy Robson</p>
             </div>
           </div>
-          <div class="px-8 py-2 bg-clr-dark-blue flex flex-row lg:flex-col justify-around rounded-b-2xl">
-            <p class="text-lg text-clr-desaturated-blue hover:text-neutral-100 font-semibold my-2 cursor-pointer">Daily</p>
-            <p class="text-lg text-clr-desaturated-blue hover:text-neutral-100 font-semibold my-2 cursor-pointer">Weeky</p>
-            <p class="text-lg text-clr-desaturated-blue hover:text-neutral-100 font-semibold my-2 cursor-pointer">Monthly</p>
+          <div
+            class="px-8 py-2 bg-clr-dark-blue flex flex-row lg:flex-col justify-around rounded-b-2xl"
+          >
+            <p
+              class="text-base md:text-lg text-clr-desaturated-blue hover:text-neutral-100 font-semibold my-2 cursor-pointer"
+            >
+              Daily
+            </p>
+            <p
+              class="text-base md:text-lg text-clr-desaturated-blue hover:text-neutral-100 font-semibold my-2 cursor-pointer"
+            >
+              Weeky
+            </p>
+            <p
+              class="text-base md:text-lg text-clr-desaturated-blue hover:text-neutral-100 font-semibold my-2 cursor-pointer"
+            >
+              Monthly
+            </p>
           </div>
         </div>
 
-        <div>
-          <div class="">o</div>
+        <div class="rounded-2xl">
+          <div class="bg-clr-light-red-work rounded-2xl">
+            <img class="ml-[60%]" src="./images/icon-work.svg" alt="" />
+          </div>
+          <div class="bg-clr-dark-blue p-8 rounded-2xl -mt-12">
+            <div class="flex flex-row items-center justify-between">
+              <p class="text-sm md:text-base font-semibold">Work</p>
+              <div>
+                <svg
+                  class="fill-clr-pale-blue hover:fill-neutral-100 cursor-pointer"
+                  width="21"
+                  height="5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between mt-2">
+              <p class="text-2xl md:text-3xl lg:text-4xl">32 hrs</p>
+              <p class="text-sm md:text-base text-clr-pale-blue">
+                Last Week - 36hrs
+              </p>
+            </div>
+          </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+
+        <div class="rounded-2xl">
+          <div class="bg-clr-soft-blue-play rounded-2xl">
+            <img class="ml-[60%]" src="./images/icon-play.svg" alt="" />
+          </div>
+          <div class="bg-clr-dark-blue p-8 rounded-2xl -mt-12">
+            <div class="flex flex-row items-center justify-between">
+              <p class="text-sm md:text-base font-semibold">Play</p>
+              <div>
+                <svg
+                  class="fill-clr-pale-blue hover:fill-neutral-100 cursor-pointer"
+                  width="21"
+                  height="5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between mt-2">
+              <p class="text-2xl md:text-3xl lg:text-4xl">32 hrs</p>
+              <p class="text-sm md:text-base text-clr-pale-blue">
+                Last Week - 36hrs
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl">
+          <div class="bg-clr-light-red-study rounded-2xl">
+            <img class="ml-[60%]" src="./images/icon-study.svg" alt="" />
+          </div>
+          <div class="bg-clr-dark-blue p-8 rounded-2xl -mt-12">
+            <div class="flex flex-row items-center justify-between">
+              <p class="text-sm md:text-base font-semibold">Study</p>
+              <div>
+                <svg
+                  class="fill-clr-pale-blue hover:fill-neutral-100 cursor-pointer"
+                  width="21"
+                  height="5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between mt-2">
+              <p class="text-2xl md:text-3xl lg:text-4xl">32 hrs</p>
+              <p class="text-sm md:text-base text-clr-pale-blue">
+                Last Week - 36hrs
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl">
+          <div class="bg-clr-lime-green-exercise rounded-2xl">
+            <img class="ml-[60%]" src="./images/icon-exercise.svg" alt="" />
+          </div>
+          <div class="bg-clr-dark-blue p-8 rounded-2xl -mt-12">
+            <div class="flex flex-row items-center justify-between">
+              <p class="text-sm md:text-base font-semibold">Work</p>
+              <div>
+                <svg
+                  class="fill-clr-pale-blue hover:fill-neutral-100 cursor-pointer"
+                  width="21"
+                  height="5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between mt-2">
+              <p class="text-2xl md:text-3xl lg:text-4xl">32 hrs</p>
+              <p class="text-sm md:text-base text-clr-pale-blue">
+                Last Week - 36hrs
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl">
+          <div class="bg-clr-violet-social rounded-2xl">
+            <img class="ml-[60%]" src="./images/icon-social.svg" alt="" />
+          </div>
+          <div class="bg-clr-dark-blue p-8 rounded-2xl -mt-12">
+            <div class="flex flex-row items-center justify-between">
+              <p class="text-sm md:text-base font-semibold">Social</p>
+              <div>
+                <svg
+                  class="fill-clr-pale-blue hover:fill-neutral-100 cursor-pointer"
+                  width="21"
+                  height="5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between mt-2">
+              <p class="text-2xl md:text-3xl lg:text-4xl">32 hrs</p>
+              <p class="text-sm md:text-base text-clr-pale-blue">
+                Last Week - 36hrs
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl">
+          <div class="bg-clr-soft-orange-self-care rounded-2xl">
+            <img class="ml-[60%]" src="./images/icon-self-care.svg" alt="" />
+          </div>
+          <div class="bg-clr-dark-blue p-8 rounded-2xl -mt-12">
+            <div class="flex flex-row items-center justify-between">
+              <p class="text-sm md:text-base font-semibold">Self Care</p>
+              <div>
+                <svg
+                  class="fill-clr-pale-blue hover:fill-neutral-100 cursor-pointer"
+                  width="21"
+                  height="5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between mt-2">
+              <p class="text-2xl md:text-3xl lg:text-4xl">32 hrs</p>
+              <p class="text-sm md:text-base text-clr-pale-blue">
+                Last Week - 36hrs
+              </p>
+            </div>
+          </div>
+        </div>
+
       </main>
     </div>
 
