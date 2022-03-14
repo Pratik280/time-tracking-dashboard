@@ -484,12 +484,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 12%;
 }
 
-.z-\[-1\] {
-  z-index: -1;
-}
-
-.z-\[3\] {
-  z-index: 3;
+.z-\[-10\] {
+  z-index: -10;
 }
 
 .my-2 {
@@ -497,16 +493,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
+.-mt-4 {
+  margin-top: -1rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.ml-\[60\%\] {
-  margin-left: 60%;
-}
-
-.-mt-12 {
-  margin-top: -3rem;
 }
 
 .flex {
@@ -525,10 +517,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3.5rem;
 }
 
-.min-h-min {
-  min-height: -webkit-min-content;
-  min-height: -moz-min-content;
-  min-height: min-content;
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-20 {
@@ -602,31 +592,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-clr-dark-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(235 46% 20% / var(--tw-bg-opacity));
-}
-
-.bg-clr-soft-blue-play {
-  --tw-bg-opacity: 1;
-  background-color: hsl(195 74% 62% / var(--tw-bg-opacity));
-}
-
-.bg-clr-light-red-study {
-  --tw-bg-opacity: 1;
-  background-color: hsl(348 100% 68% / var(--tw-bg-opacity));
-}
-
-.bg-clr-lime-green-exercise {
-  --tw-bg-opacity: 1;
-  background-color: hsl(145 58% 55% / var(--tw-bg-opacity));
-}
-
-.bg-clr-violet-social {
-  --tw-bg-opacity: 1;
-  background-color: hsl(264 64% 52% / var(--tw-bg-opacity));
-}
-
-.bg-clr-soft-orange-self-care {
-  --tw-bg-opacity: 1;
-  background-color: hsl(43 84% 65% / var(--tw-bg-opacity));
 }
 
 .fill-clr-pale-blue {
@@ -722,16 +687,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.before\:z-\[-2\]::before {
-  content: var(--tw-content);
-  z-index: -2;
-}
-
-.before\:-mb-4::before {
-  content: var(--tw-content);
-  margin-bottom: -1rem;
-}
-
 .before\:block::before {
   content: var(--tw-content);
   display: block;
@@ -757,6 +712,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .before\:content-\[\'\'\]::before {
   --tw-content: '';
   content: var(--tw-content);
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hover\:bg-clr-blue-accent:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(236 41% 34% / var(--tw-bg-opacity));
 }
 
 .hover\:fill-neutral-100:hover {
@@ -815,9 +779,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     align-items: flex-start;
   }
 
+  .lg\:gap-1 {
+    gap: 0.25rem;
+  }
+
   .lg\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .lg\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-4xl {

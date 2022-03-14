@@ -13,7 +13,8 @@ module.exports = {
         "clr-soft-orange-self-care": "hsl(43, 84%, 65%)",
 
         "clr-very-dark-blue": "hsl(226, 43%, 10%)", // bg
-        "clr-dark-blue": "hsl(235, 46%, 20%)", // hover accent
+        "clr-dark-blue": "hsl(235, 46%, 20%)", 
+        "clr-blue-accent": "hsl(236, 41%, 34%)", // hover
         "clr-desaturated-blue": "hsl(235, 45%, 61%)", // text
         "clr-pale-blue": "hsl(236, 100%, 87%)", // text main
       },
