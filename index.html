@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-clr-very-dark-blue text-neutral-100 min-h-screen flex-center">
+    <div>
+      <div class="wrapper custom-container py-12 lg:py-24">
+        <main class="parent">
+          <div class="bg-clr-blue pt-8 rounded-2xl lg:row-span-2">
+            <div class="px-8 pb-8 flex flex-row lg:block gap-6">
+              <img
+                class="aspect-square h-16 lg:h-20 rounded-full border-neutral-100 border-solid border-2"
+                src="./images/image-jeremy.png"
+                alt=""
+              />
+              <div class="lg:mt-3">
+                <p class="text-sm md:text-base text-clr-pale-blue">
+                  Report for
+                </p>
+                <p class="text-2xl md:text-4xl">Jeremy Robson</p>
+              </div>
+            </div>
+            <div
+              id="time-frames"
+              class="px-8 py-2 lg:py-6 bg-clr-dark-blue flex flex-row lg:flex-col lg:gap-1 justify-around rounded-b-2xl"
+            >
+              <button
+                data-timeframe="daily"
+                class="text-base md:text-lg lg:text-left text-neutral-100 hover:text-neutral-100 font-semibold my-2 cursor-pointer"
+              >
+                Daily
+              </button>
+              <button
+                data-timeframe="weekly"
+                class="text-base md:text-lg lg:text-left text-clr-desaturated-blue hover:text-neutral-100 font-semibold my-2 cursor-pointer"
+              >
+                Weeky
+              </button>
+              <button
+                data-timeframe="monthly"
+                class="text-base md:text-lg lg:text-left text-clr-desaturated-blue hover:text-neutral-100 font-semibold my-2"
+              >
+                Monthly
+              </button>
+            </div>
+          </div>
+
+          <section
+            class="card relative rounded-2xl before:content-[''] before:content before:block before:bg-clr-light-red-work before:h-14 before:rounded-t-2xl"
+          >
+            <img
+              class="absolute top-0 right-[12%] w-20 h-14 object-cover z-[-10]"
+              src="./images/icon-work.svg"
+              alt="work image"
+            />
+            <div
+              class="bg-clr-dark-blue hover:bg-clr-blue-accent hover:cursor-pointer p-8 rounded-2xl -mt-4"
+            >
+              <div class="flex flex-row items-center justify-between">
+                <h1
+                  data-heading="Work"
+                  class="text-sm md:text-base font-semibold capitalize"
+                >
+                  Work
+                </h1>
+                <div>
+                  <svg
+                    class="fill-clr-pale-blue hover:fill-neutral-100 cursor-pointer"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex flex-row lg:flex-col items-center lg:items-start gap-2 justify-between mt-2"
+              >
+                <p class="hours text-2xl md:text-3xl lg:text-4xl">
+                  <span>32</span> hrs
+                </p>
+                <p class="previous text-sm md:text-base text-clr-pale-blue">
+                  Last Week - <span>36</span>hrs
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="card relative rounded-2xl before:content-[''] before:content before:block before:bg-clr-soft-blue-play before:h-14 before:rounded-t-2xl"
+          >
+            <img
+              class="absolute top-0 right-[12%] w-20 h-14 object-cover z-[-10]"
+              src="./images/icon-work.svg"
+              alt="work image"
+            />
+            <div
+              class="bg-clr-dark-blue hover:bg-clr-blue-accent hover:cursor-pointer p-8 rounded-2xl -mt-4"
+            >
+              <div class="flex flex-row items-center justify-between">
+                <h1
+                  data-heading="Play"
+                  class="text-sm md:text-base font-semibold capitalize"
+                >
+                  Play
+                </h1>
+                <div>
+                  <svg
+                    class="fill-clr-pale-blue hover:fill-neutral-100 cursor-pointer"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex flex-row lg:flex-col items-center lg:items-start gap-2 justify-between mt-2"
+              >
+                <p class="hours text-2xl md:text-3xl lg:text-4xl">
+                  <span>32</span> hrs
+                </p>
+                <p class="previous text-sm md:text-base text-clr-pale-blue">
+                  Last Week - <span>36</span>hrs
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="card relative rounded-2xl before:content-[''] before:content before:block before:bg-clr-light-red-study before:h-14 before:rounded-t-2xl"
+          >
+            <img
+              class="absolute top-0 right-[12%] w-20 h-14 object-cover z-[-10]"
+              src="./images/icon-work.svg"
+              alt="work image"
+            />
+            <div
+              class="bg-clr-dark-blue hover:bg-clr-blue-accent hover:cursor-pointer p-8 rounded-2xl -mt-4"
+            >
+              <div class="flex flex-row items-center justify-between">
+                <h1
+                  data-heading="Study"
+                  class="text-sm md:text-base font-semibold capitalize"
+                >
+                  Study
+                </h1>
+                <div>
+                  <svg
+                    class="fill-clr-pale-blue hover:fill-neutral-100 cursor-pointer"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex flex-row lg:flex-col items-center lg:items-start gap-2 justify-between mt-2"
+              >
+                <p class="hours text-2xl md:text-3xl lg:text-4xl">
+                  <span>32</span> hrs
+                </p>
+                <p class="previous text-sm md:text-base text-clr-pale-blue">
+                  Last Week - <span>36</span>hrs
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="card relative rounded-2xl before:content-[''] before:content before:block before:bg-clr-lime-green-exercise before:h-14 before:rounded-t-2xl"
+          >
+            <img
+              class="absolute top-0 right-[12%] w-20 h-14 object-cover z-[-10]"
+              src="./images/icon-work.svg"
+              alt="work image"
+            />
+            <div
+              class="bg-clr-dark-blue hover:bg-clr-blue-accent hover:cursor-pointer p-8 rounded-2xl -mt-4"
+            >
+              <div class="flex flex-row items-center justify-between">
+                <h1
+                  data-heading="Exercise"
+                  class="text-sm md:text-base font-semibold capitalize"
+                >
+                  Exercise
+                </h1>
+                <div>
+                  <svg
+                    class="fill-clr-pale-blue hover:fill-neutral-100 cursor-pointer"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex flex-row lg:flex-col items-center lg:items-start gap-2 justify-between mt-2"
+              >
+                <p class="hours text-2xl md:text-3xl lg:text-4xl">
+                  <span>32</span> hrs
+                </p>
+                <p class="previous text-sm md:text-base text-clr-pale-blue">
+                  Last Week - <span>36</span>hrs
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="card relative rounded-2xl before:content-[''] before:content before:block before:bg-clr-violet-social before:h-14 before:rounded-t-2xl"
+          >
+            <img
+              class="absolute top-0 right-[12%] w-20 h-14 object-cover z-[-10]"
+              src="./images/icon-work.svg"
+              alt="work image"
+            />
+            <div
+              class="bg-clr-dark-blue hover:bg-clr-blue-accent hover:cursor-pointer p-8 rounded-2xl -mt-4"
+            >
+              <div class="flex flex-row items-center justify-between">
+                <h1
+                  data-heading="Social"
+                  class="text-sm md:text-base font-semibold capitalize"
+                >
+                  Social
+                </h1>
+                <div>
+                  <svg
+                    class="fill-clr-pale-blue hover:fill-neutral-100 cursor-pointer"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex flex-row lg:flex-col items-center lg:items-start gap-2 justify-between mt-2"
+              >
+                <p class="hours text-2xl md:text-3xl lg:text-4xl">
+                  <span>32</span> hrs
+                </p>
+                <p class="previous text-sm md:text-base text-clr-pale-blue">
+                  Last Week - <span>36</span>hrs
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="card relative rounded-2xl before:content-[''] before:content before:block before:bg-clr-soft-orange-self-care before:h-14 before:rounded-t-2xl"
+          >
+            <img
+              class="absolute top-0 right-[12%] w-20 h-14 object-cover z-[-10]"
+              src="./images/icon-work.svg"
+              alt="work image"
+            />
+            <div
+              class="bg-clr-dark-blue hover:bg-clr-blue-accent hover:cursor-pointer p-8 rounded-2xl -mt-4"
+            >
+              <div class="flex flex-row items-center justify-between">
+                <h1
+                  data-heading="Self Care"
+                  class="text-sm md:text-base font-semibold capitalize"
+                >
+                  Self Care
+                </h1>
+                <div>
+                  <svg
+                    class="fill-clr-pale-blue hover:fill-neutral-100 cursor-pointer"
+                    width="21"
+                    height="5"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="flex flex-row lg:flex-col items-center lg:items-start gap-2 justify-between mt-2"
+              >
+                <p class="hours text-2xl md:text-3xl lg:text-4xl">
+                  <span>32</span> hrs
+                </p>
+                <p class="previous text-sm md:text-base text-clr-pale-blue">
+                  Last Week - <span>36</span>hrs
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer class="attribution text-center text-white mt-2">
+        Challenge by <a
+          href="https://www.frontendmentor.io/solutions/timetracker-dashboard-0826TMSDJ"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/Pratik280">Pratik280</a>.
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
